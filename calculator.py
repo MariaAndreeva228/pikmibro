@@ -1,23 +1,3 @@
-
-git checkout dev
-git pull origin dev
-git checkout -b feature/user-interface
-
-# Создает структуру файлов
-mkdir -p operations
-touch operations/__init__.py
-# Вставляет код в calculator.py
-
-# Затем:
-git add calculator.py operations/__init__.py
-git commit -m "feat: add user interface, menu system and application logic"
-git push origin feature/user-interface
-
-
-# calculator.py
-# Разработчик: nnnn
-# Ветка: feature/user-interface
-
 from operations.basic_operations import add, subtract, multiply, divide, power
 from operations.advanced_operations import (
     square_root, square, percentage, 
@@ -193,7 +173,7 @@ def main():
         input("\nНажмите Enter для продолжения...")
 
 # Точка входа в программу
-if name == "main":
+if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
