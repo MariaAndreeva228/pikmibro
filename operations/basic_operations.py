@@ -24,7 +24,8 @@ def power(a, b):
     """Возведение в степень"""
     return a ** b
 
-if name == "main":
+
+if __name__ == "__main__":
     # Тест базовых операций
     print("Тестирование базовых операций:")
     print(f"2 + 3 = {add(2, 3)}")
@@ -32,7 +33,7 @@ if name == "main":
     print(f"4 * 3 = {multiply(4, 3)}")
     print(f"10 / 2 = {divide(10, 2)}")
     print(f"2 ^ 3 = {power(2, 3)}")
-    
+
     # Тест обработки ошибок
     try:
         divide(10, 0)
